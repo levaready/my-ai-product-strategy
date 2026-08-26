@@ -1,19 +1,19 @@
 # The Prototype Bet
 
 ## What I Built
-<!-- One sentence: what does this prototype demonstrate? -->
+Provide producers relevant information needs to make decision in their operations to maximize efficiency
 
 ## Tool Used
-<!-- v0 / Cursor / Lovable / other -->
+replit
 
 ## Prototype Link
-<!-- Paste the shareable URL -->
+https://replit.com/join#t=wwcwwoikixaartg-levaready
 
 ## AI Value Archetype
-<!-- Automator / Copilot / Oracle / Creator / Orchestrator -->
+Copilot
 
 ## The Bet in One Sentence
-<!-- What you're building, for whom, why now -->
+A web-based platform for farmers and producers that learns how their operation generates profit, then uses that insight to improve efficiency, increase yields, and consistently raise product quality.
 
 ## Kill Criteria
-<!-- When would you stop? What evidence would kill this bet? -->
+Stop if pilot users do not consistently use BluRok to make operational decisions, if the platform fails to improve measurable outcomes such as yield, quality, labor efficiency, or profitability, or if users are unwilling to pay enough to support a sustainable business model after 3–6 months of real-world use.
