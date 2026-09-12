@@ -47,17 +47,7 @@ A living, version-controlled strategy for transforming BluRok Vision from an agr
 ---
 
 ## The Margin (M3)
-Will this make money or bleed it?
-Gross Margin—traditional SaaS baseline: 87.8%
-Gross Margin—AI-adjusted: 81.1%
-Pricing Model: Hybrid penetration pricing—$39 monthly base + $1 per completed production decision, targeting approximately $49 ARPU
-Cascading Strategy: Deterministic software first, followed by 32% small-model, 46% mid-tier, and 22% frontier-model traffic
-Break-even: Not yet calculable without validated fixed monthly operating costs. Current estimated contribution is $39.74 per user/month, so:
-$$ \text{Break-even users} = \frac{\text{Monthly fixed operating costs}}{\$39.74} $$
-Operating guardrails:
-AI inference COGS ≤ 10% of revenue
-Frontier traffic ≤ 25%
-Gross margin ≥ 75%
+
 **Will this make money or bleed it?**
 
 - **Gross Margin (current):** 87.8%
