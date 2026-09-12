@@ -27,18 +27,32 @@ BluRok will display calibrated confidence for every material diagnosis or recomm
 **Low confidence (<70%):**
 
 **User control surface:**
+Users can confirm, reject, correct, or mark an output as uncertain; select an alternative diagnosis; explain an override; attach supporting images or test results; and record the eventual outcome.
 
 ## Reliability Contract
 
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | | | |
-| Hallucination rate | | | |
-| Latency (p95) | | | |
-| Drift velocity | | | |
+| Accuracy | 92% weekly accuracy on the validated BluRok gold set | Weekly evaluation against labeled cultivation, image-diagnosis, recommendation, extraction, and profitability test cases. Results are segmented by crop, species, model, confidence level, and task type. Production corrections and confirmed outcomes supplement the gold-set evaluation. | Below 88% overall, below 90% for high-impact diagnoses, or a decline greater than three percentage points in any crop, region, or workflow segment |
+| Hallucination rate | Below 1% | Weekly claim-level review of the gold set plus a risk-weighted sample of production responses. Claims are checked against retrieved sources, farm records, product labels, regulations, and approved SOPs. | 1% or higher, or any confidently fabricated safety, compliance, chemical-treatment, financial, or source claim |
+| Latency (p95) | First response or token: Below 750 ms
+Standard recommendation: Below 2 seconds
+Image diagnosis or complex agent workflow: Below 5 seconds | Continuous monitoring through OpenTelemetry and Datadog, segmented by model, provider, feature, device, and region | Standard responses exceed 5 seconds or complex workflows exceed 10 seconds for 10 consecutive minutes |
+| Drift velocity | Less than 0.5 percentage-point quality decline over four weeks | Compare the current rolling four-week gold-set score with the previous validated four-week baseline. Segment results to prevent strong performance in common cases from hiding degradation in smaller agricultural categories. | Greater than 1 percentage point over four weeks, or greater than three percentage points within a specific crop, disease, region, season, or user segment |
 
 ## HITL Architecture
-<!-- When does a human step in? What's the escalation path? -->
+Trigger — when does a human enter?
+Confidence falls below 50%
+Confidence is between 50% and 90% for a high-consequence decision
+AI evidence conflicts with farm records, sensor data, or approved SOPs
+The user disputes or overrides the output
+The recommendation involves pesticides, worker safety, compliance, destructive crop action, or significant financial exposure
+The case involves an unfamiliar crop, disease, region, or operating condition
+Hallucination or accuracy thresholds are breached
 
-## Red-Team Findings
-*What failure mode did your partner find that you missed?*
+Reviewer — who reviews?
+Farm supervisor or designated cultivation manager for operation-specific decisions
+BluRok cultivation-quality lead for model-output validation
+Approved agronomist, plant pathologist, mycologist, compliance specialist, or financial reviewer for specialized escalations
+
+Feedback loop: Yes. Corrections enter a structured review queue and capture the original output, confidence, evidence, reviewer decision, action taken, and eventual outcome. Validated corrections are added to the farm’s memory and the appropriate gold-set segment.
