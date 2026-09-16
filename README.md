@@ -1,18 +1,19 @@
-# My AI Product Strategy
+# My Ai Product Strategy
 
-A living, version-controlled strategy for transforming BluRok Vision from an agricultural AI application into a defensible operating-intelligence platform.
+> A web-based platform for farmers and producers that learns how their operation generates profit, then uses that insight to improve efficiency, increase yields, and consistently raise product quality.
+
 ---
 
 ## Strategy at a Glance
 
-| Component          | Module | Status | Key Artifact         |
-| ------------------ | :----: | :----: | -------------------- |
-| **The Bet**        |   M1   |   [x]  | `01-the-bet/`        |
-| **The Moat**       |   M2   |   [x]  | `02-the-moat/`       |
-| **The Margin**     |   M3   |   [x]  | `03-the-margin/`     |
-| **The Contract**   |   M4   |   [x]  | `04-the-contract/`   |
-| **The Guardrails** |   M5   |   [x]  | `05-the-guardrails/` |
-| **The Pitch**      |   M6   |   [x]  | `06-the-pitch/`      |
+| Component | Module | Status | Key Artifact |
+|-----------|--------|--------|-------------|
+| **The Bet** | M1 | [x] | `01-the-bet/` |
+| **The Moat** | M2 | [x] | `02-the-moat/` |
+| **The Margin** | M3 | [x] | `03-the-margin/` |
+| **The Contract** | M4 | [x] | `04-the-contract/` |
+| **The Guardrails** | M5 | [x] | `05-the-guardrails/` |
+| **The Pitch** | M6 | [x] | `06-the-pitch/` |
 
 ---
 
@@ -20,13 +21,13 @@ A living, version-controlled strategy for transforming BluRok Vision from an agr
 
 **What we're building, for whom, why now.**
 
-- **Product:** BluRok Vision—a web-based agricultural operating-intelligence platform that learns how each producer’s operation generates profit, then uses that context to improve efficiency, yield, quality, and decision-making.
-- **AI Value Archetype:**  Decision-intelligence copilot combining recommendations, computer vision, evidence retrieval, and human-controlled workflow support.
-- **Vulnerability Scores:** Moat 3.5/5 · Data 3/5 · Platform Exposure 4/5
-- **Top Risk:** Mistaking replaceable AI features for a moat before BluRok captures enough proprietary operational and outcome data.
-- **Confidence:** M
-- **Prototype:** [[BluRok Vision](https://grower-os.replit.app/)]
-- **Kill Criteria:** Stop or materially pivot if pilot users do not consistently use BluRok for operational decisions, it fails to improve yield, quality, labor efficiency, decision speed, or profitability, or customers will not pay enough to support sustainable margins after three to six months of real-world use.
+- **Product:**
+- **AI Value Archetype:** Copilot
+- **Vulnerability Scores:** _(add: Moat _/5 · Data _/5 · Platform _/5)_
+- **Top Risk:** BluRok's biggest strategic risk is mistaking AI-powered features for the moat before it has captured enough proprietary operational, biological, economic, and consumer outcome data to make the platform difficult to replace.
+- **Confidence:** _(add: H / M / L)_
+- **Prototype:** https://replit.com/join#t=wwcwwoikixaartg-levaready
+- **Kill Criteria:** Stop if pilot users do not consistently use BluRok to make operational decisions, if the platform fails to improve measurable outcomes such as yield, quality, labor efficiency, or profitability, or if users are unwilling to pay enough to support a sustainable business model after…
 
 → Details: [`01-the-bet/`](01-the-bet/)
 
@@ -36,10 +37,10 @@ A living, version-controlled strategy for transforming BluRok Vision from an agr
 
 **Why this won't get copied in 6 months.**
 
-- **Data Flywheel Score:** 10/20
-- **Weakest Loop:** Recursive Learning/Correction—the connection between recommendations, producer actions, corrections, and verified outcomes.
-- **Competitive Position:** Competes on workflow depth × proprietary outcome intelligence. BluRok is currently moderate on workflow depth and early on proprietary data, with a target position of high depth and high outcome intelligence.
-- **Encroachment Defense:** Farm-specific memory, closed recommendation-to-outcome learning, cross-domain profitability intelligence, privacy-safe benchmarking, human-controlled workflows, and provider abstraction.
+- **Data Flywheel Score:**
+- **Weakest Loop:** Correction and Network
+- **Top Encroachment Threat:** OpenAI
+- **Encroachment Defense:** Build structured feedback directly into every major AI interaction so users can confirm, reject, or correct recommendations and record the eventual outcome.…
 - **Vendor Portability:** Partial
 
 → Details: [`02-the-moat/`](02-the-moat/)
@@ -50,16 +51,14 @@ A living, version-controlled strategy for transforming BluRok Vision from an agr
 
 **Will this make money or bleed it?**
 
-- **Gross Margin (current):** 87.8%
-- **Gross Margin (AI-adjusted):** 81.1%
-- **Pricing Model:** Hybrid penetration pricing—$39 monthly base + $1 per completed production decision, targeting approximately $49 ARPU
-- **Cascading Strategy:** Deterministic software first, followed by 32% small-model, 46% mid-tier, and 22% frontier-model traffic
-- **Break-even at:** Not yet calculable without validated fixed monthly operating costs. Current estimated contribution is $39.74 per user/month, so:
-$$ \text{Break-even users} = \frac{\text{Monthly fixed operating costs}}{\$39.74} $$
-Operating guardrails:
-AI inference COGS ≤ 10% of revenue
-Frontier traffic ≤ 25%
-Gross margin ≥ 75%
+- **Gross Margin (current):**
+- **Gross Margin (AI-adjusted):**
+- **Pricing Model:** hybrid
+- **Pricing Today → Tomorrow:** Pre-launch; no validated paid pricing → $39/month base fee + $1 per completed production decision
+- **Total AI COGS / unit:**
+- **Cascading Strategy:** Triage: GPT-5.6 Luna; frontier: GPT-5.6 Sol; ratio . 78% non-frontier / 22% frontier
+- **Net Margin Shift:** Average margin: −6.7 percentage points
+- **Break-even at:**
 
 → Details: [`03-the-margin/`](03-the-margin/)
 
@@ -69,11 +68,11 @@ Gross margin ≥ 75%
 
 **Why users will trust a probabilistic system.**
 
-- **Reliability Target:** 2% weekly gold-set accuracy, hallucinations below 1%, standard-response p95 below 2 seconds, and complex-workflow p95 below 5 seconds
-- **Golden Dataset:** 12 rows, 5 adversarial
-- **Confidence UX:** High Confidence above 90%, Moderate Confidence from 50–90%, and Insufficient Evidence below 50%. Exact percentages appear only after calibration.
-- **HITL Architecture:** Low-confidence, disputed, conflicting, regulated, safety-related, destructive, or financially consequential decisions enter a structured human-review queue. Validated corrections feed farm memory and the evaluation dataset.
-- **Failure Mode Coverage:** High for the initial scope, covering incomplete images, missing information, conflicting measurements, sensor errors, unsupported financial conclusions, model-routing errors, and weak personalization. Provider outages, prompt injection, privacy attacks, multilingual cases, and additional crops still require expanded testing.
+- **Reliability Target:** 92% weekly accuracy on the validated BluRok gold set
+- **Golden Dataset:** 7 rows, 7 adversarial
+- **Confidence UX:** show uncertainty / tiered confidence / human-in-loop trigger
+- **HITL Architecture:** Trigger — when does a human enter? Confidence falls below 50% Confidence is between 50% and 90% for a high-consequence decision AI evidence conflicts with farm records, sensor data, or approved SOPs The user disputes or overrides the output…
+- **Failure Mode Coverage:** 57% rule / 14% LLM / 29% both
 
 → Details: [`04-the-contract/`](04-the-contract/)
 
@@ -81,13 +80,16 @@ Gross margin ≥ 75%
 
 ## The Guardrails (M5)
 
-**What breaks when this scales — and what compounds.**
+**What breaks when this scales, and what compounds.**
 
-- **Compounding System:** Recommendations generate decisions and actions; actions produce biological, quality, operational, and financial outcomes; validated outcomes improve farm memory, cross-domain recommendations, evaluation cases, and eventually privacy-safe network benchmarks.
-- **Governance Posture:** Advisory copilot with evidence disclosure, tiered confidence, measurable escalation triggers, immutable decision logs, and human approval for consequential actions.
-- **Shadow AI Status:** 8 workaround groups found, 7 retained after triage
-- **Agent Boundaries:** Agents may observe, retrieve, summarize, calculate, rank, recommend, and draft. They may not automatically apply chemicals, control equipment, destroy crops, submit compliance reports, transact, make employment decisions, or expose customer data.
-- **Regulatory Exposure:** Limited under the current EU AI Act framing, provided BluRok remains advisory. Applicable controls may include AI transparency, GDPR/privacy requirements, FTC consumer-protection expectations, EPA/FIFRA pesticide-label restrictions, and state agriculture, food-safety, and cannabis rules.
+- **Compounding System:** | Loop | Input | Output | Compounds? | Status | |------|-------|--------|-----------|--------| | Recursive Learning | Farm records, images, sensor data, AI recommendations, user corrections, actions taken, and verified b…
+- **Governance Posture:** This policy applies to BluRok Vision’s AI-generated:
+- **Autonomy Boundaries:** | Decision | Boundary | Rule |
+- **Escalation Triggers:** A case routes to a human every time when:
+- **Audit Cadence:** | Cadence | Audit | Named Owner |
+- **Shadow AI Audit (user-side):**
+- **Agent Boundaries:** Observation Agent: Can ingest images, sensor data, and records and identify anomalies. Cannot alter equipment or declare a final diagnosis. Approval owner: Farm Manager.…
+- **Regulatory Exposure:** Regimes that apply or may apply
 
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
@@ -97,11 +99,11 @@ Gross margin ≥ 75%
 
 **How you get this funded, shipped, and adopted.**
 
-- **Horizon 1 (Now):** Close the recursive learning loop; launch confidence, evidence, approval, and human-review controls; add model abstraction, evaluation, cost monitoring, and rollback.
-- **Horizon 2 (Next):** Connect environmental, cultivation, yield, quality, labor, cost, sales, and market data; launch profitability intelligence and priority integrations; test hybrid pricing.
-- **Horizon 3 (Bet):** Build privacy-safe network intelligence, comparable-producer benchmarking, producer-to-market feedback, and approved workflow orchestration.
+- **Horizon 1 (Now):** Close the recommendation-to-outcome loop: recommendation → response → action → outcome → correction · Launch confidence tiers, evidence display, approval controls, and human-review queue · Add provider abstraction, deterministic-first routing, evaluations, and cost monitoring · Establish the validated evaluation baseline
+- **Horizon 2 (Next):** Build cross-domain profitability intelligence connecting environment, actions, yield, quality, labor, costs, and sales · Launch “What should I produce next?” with deterministic economics and evidence-grounded AI explanations · Integrate priority sensor, accounting, compliance, POS, and marketplace systems · Test hybrid pricing: $39 base plus $1 per completed production decision
+- **Horizon 3 (Bet):** Launch privacy-safe network intelligence and comparable-producer benchmarks · Connect producer outcomes with consumer preferences, purchases, repeat purchases, and sell-through · Expand from recommendations into approved workflow orchestration
 - **Board Narrative:** BluRok Vision will become the agricultural operating-intelligence system that learns which decisions produce the best biological, operational, quality, and financial outcomes for each farm.
-- **Key Metric:** Verified Outcome Rate—the percentage of high-impact recommendations connected to a confirmed action and measurable outcome. Initial target: at least 60%.
-- **Supporting Horizon 1 metric:** At least 80% of high-impact recommendations receive an accept, modify, reject, or escalate response.
+- **Ask:** Approve the 90-day Horizon 1 build, dedicate engineering and product capacity to the closed learning loop and trust architecture, recruit a focused producer pilot, and prevent expansion into autonomous or network-level features until the de…
+- **Key Strategic Change:**
 
 → Details: [`06-the-pitch/`](06-the-pitch/)
