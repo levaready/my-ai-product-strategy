@@ -2,65 +2,168 @@
 
 # Roadmap
 
-### Horizon 1 — Now (0–3 months)
+## Horizon 1 — Now: Trusted Farm Learning (0–3 months)
 
-*Prove the foundation. Productionize the prototype, close the first funding tranche, and validate the product with real producers.*
+*Build the foundation that allows BluRok to learn safely from every recommendation, action, correction, and outcome.*
 
-**Budget envelope:** $325,000  
-**Team:** Founder/CEO/Product Lead + 2 engineers + fractional specialists
+### Product priorities
 
-| Initiative | Metric | Confidence |
-|---|---|:---:|
-| Secure the initial funding close and assemble the founding product team | Close **≥$1M toward the $2.5M round**; hire a Founding/Lead Engineer and Applied AI/Data Engineer | M |
-| Convert the Replit prototype into a secure, production-ready, multi-tenant platform | Production environment operational; farm data isolated by account; monitoring, backups, access controls, and audit logging implemented | M |
-| Close the recommendation-to-outcome loop: recommendation → response → action → outcome → correction | **≥80%** of high-impact recommendations receive a user response; **≥60%** receive a verified outcome | H |
-| Launch confidence tiers, evidence display, approval controls, and a human-review queue | **100%** of material recommendations show confidence and evidence; **100%** of triggered cases enter review | H |
-| Add provider abstraction, deterministic-first routing, evaluations, and cost monitoring | Frontier traffic **≤25%**; AI COGS **≤10% of revenue**; gross margin **≥75%** | M |
-| Establish a validated evaluation baseline | Gold-set accuracy **≥92%** for supported tasks; hallucination rate **<1%**; task-specific latency targets met | M |
-| Recruit the first producer design partners | **5–8 active pilot operations**; at least **3 use BluRok weekly** to support an operational decision | M |
+- Productionize the current Replit prototype.
+- Close the recursive learning loop:
+  **Recommendation → User Response → Action → Outcome → Correction**
+- Create persistent farm profiles and operational memory.
+- Launch confidence tiers, evidence citations, approval controls, and human-review workflows.
+- Add model-provider abstraction, deterministic-first routing, evaluation, cost monitoring, and rollback.
+- Establish the initial gold evaluation dataset.
+- Recruit the first producer design partners.
+
+### Success metrics
+
+- At least **80%** of high-impact recommendations receive an accept, modify, reject, or escalate response.
+- At least **60% Verified Outcome Rate** for high-impact recommendations.
+- **100%** of material recommendations display confidence and supporting evidence.
+- **100%** of triggered high-risk cases enter human review.
+- Gold-set accuracy reaches **≥92%** for supported tasks.
+- Hallucination rate remains **<1%**.
+- Frontier-model traffic remains **≤25%**.
+- AI COGS remains **≤10% of revenue**.
+- Recruit **5–8 active pilot operations**, with at least **3 using BluRok weekly**.
+
+### Team and funding
+
+- Founder/CEO/Product Lead
+- Founding/Lead Engineer
+- Applied AI/Data Engineer
+- Fractional design, cultivation, regulatory, and security specialists
+- **Budget: $325,000**
+
+### Horizon 1 exit gate
+
+BluRok can demonstrate that producer responses and outcomes are being captured reliably, recommendations are evidence-grounded and governed, and real producers use the platform to support recurring operational decisions.
 
 ---
 
-### Horizon 2 — Next (3–9 months)
+## Horizon 2 — Next: Cross-Domain Profitability Intelligence (3–9 months)
 
-*Prove commercial value. Add integrations, profitability intelligence, a third engineer, and paying producer pilots.*
+*Connect operational data across the farm so BluRok can determine which decisions improve biological, quality, operational, and financial outcomes.*
 
-**Budget envelope:** $875,000  
-**Team:** Founder/CEO/Product Lead + 3 engineers + pilot/customer-success support + fractional specialists
+### Product priorities
 
-| Initiative | Metric | Confidence |
-|---|---|:---:|
-| Expand the engineering team with a Backend/Integrations Engineer after Horizon 1 gates are met | Third engineer hired; Horizon 1 pilot, reliability, data-capture, and safety gates passed before headcount expansion | M |
-| Build cross-domain profitability intelligence connecting environment, actions, yield, quality, labor, costs, and sales | **≥70%** of pilot production cycles contain a complete linked outcome record | M |
-| Launch “What should I produce next?” with deterministic economics and evidence-grounded AI explanations | Reduce production-planning decision time by **≥30%**; **≥70%** of pilot users rate recommendations useful or highly useful | M |
-| Integrate priority sensor, accounting, compliance, POS, and marketplace systems | At least **3 priority integrations** live with **≥95% successful imports** | M |
-| Launch expert review for uncertain, regulated, or high-consequence recommendations | **100%** of defined high-risk cases routed for human review; median review turnaround **<24 hours** | M |
-| Validate commercial B2B pricing across producer segments | Test plans from **$199–$999/month** plus facility and integration pricing; achieve blended paying-customer ARPU of **≥$500/month** | M |
-| Convert pilots into paying operations | **10–20 active pilots**, at least **10 paying operations**, **≥70% 90-day retention**, and **≥$5,000 MRR** | M |
-| Demonstrate measurable producer value | At least **2 decision modules** show a measurable improvement in decision time, labor efficiency, cost, yield, quality, or profitability | M |
+- Connect environmental, cultivation, intervention, yield, quality, labor, cost, sales, and market data.
+- Launch cross-domain profitability intelligence.
+- Launch the evidence-grounded **“What should I produce next?”** workflow.
+- Integrate priority sensor, accounting, compliance, POS, and marketplace systems.
+- Add expert review for uncertain, regulated, or high-consequence recommendations.
+- Track cultivar, strain, production-cycle, and intervention performance.
+- Test hybrid B2B pricing with a monthly platform fee plus premium usage, integrations, or completed decision workflows.
+
+### Success metrics
+
+- At least **70%** of pilot production cycles contain complete linked outcome records.
+- Verified Outcome Rate increases to **≥70%**.
+- Production-planning decision time decreases by **≥30%**.
+- At least **70%** of pilot users rate recommendations useful or highly useful.
+- Launch at least **3 priority integrations** with **≥95% successful imports**.
+- Convert at least **10 operations into paying customers**.
+- Maintain **≥70% 90-day retention**.
+- Reach at least **$5,000 MRR** and **$500 blended monthly ARPU**.
+- Demonstrate measurable improvement from at least **2 decision modules**.
+- Maintain gross margin of **≥75%**.
+
+### Team and funding
+
+- Founder/CEO/Product Lead
+- Founding/Lead Engineer
+- Applied AI/Data Engineer
+- Backend/Integrations Engineer
+- Pilot implementation/customer-success support
+- Fractional domain specialists
+- **Budget: $875,000**
+
+### Horizon 2 exit gate
+
+BluRok can prove that connecting operational and financial data produces better decisions, measurable customer value, repeat usage, retention, and willingness to pay commercial B2B prices.
 
 ---
 
-### Horizon 3 — Bet (9–18 months)
+## Horizon 3 — Bet: Network Intelligence and Workflow Orchestration (9–18 months)
 
-*Scale what works. Build network intelligence, expand workflow automation, and establish repeatable commercial growth.*
+*Turn accumulated farm and market outcomes into a privacy-safe intelligence network that improves as more producers use BluRok.*
 
-**Budget envelope:** $1,050,000  
-**Team:** Founder/CEO/Product Lead + 3–4 engineers + customer success/implementation support  
-**Operating reserve:** $250,000 across all three horizons
+### Product priorities
 
-| Initiative | Metric | Confidence |
-|---|---|:---:|
-| Add a fourth Product/Frontend or Platform Engineer only after commercial validation | Fourth engineer hired only after reaching **10 paying operations**, **≥70% retention**, reliable outcome capture, and no unresolved critical safety issues | M |
-| Launch privacy-safe network intelligence and comparable-producer benchmarks | Network recommendations outperform farm-only baselines without exposing identifiable producer information | L |
-| Create farm-specific predictive models using accumulated operational history | Farm-specific recommendations demonstrate measurable improvement over generic agricultural guidance | L |
-| Connect producer outcomes with consumer preferences, purchases, repeat purchases, and sell-through | Demonstrate statistically reliable improvement in product recommendations and production planning | L |
-| Expand from recommendations into human-approved workflow orchestration | Reduce manual operational work by **≥25%** while maintaining **zero unauthorized consequential actions** | L |
-| Establish repeatable commercial growth | Reach **30–50 paying operations**, **$20,000–$50,000 MRR**, and consistent producer onboarding and implementation processes | M |
-| Prove that BluRok’s proprietary data creates defensibility | Demonstrate that recommendation → action → outcome data materially improves accuracy, personalization, or profitability compared with a general-purpose AI baseline | M |
-| Prepare for the next institutional funding round | Document repeatable sales, retention, unit economics, outcome improvement, data advantage, and a credible expansion strategy | M |
+- Launch privacy-safe network intelligence.
+- Provide comparable-producer performance benchmarks.
+- Build farm-specific predictive models from longitudinal operating history.
+- Connect producer outcomes with consumer preferences, purchases, repeat purchases, pricing, and sell-through.
+- Create producer-to-market feedback loops.
+- Expand from recommendations into human-approved workflow orchestration.
+- Support multi-site and international producer operations.
+- Prepare the product, economics, and data advantage for the next institutional funding round.
 
+### Success metrics
 
+- Verified Outcome Rate increases to **≥80%**.
+- Network recommendations outperform farm-only and general-purpose AI baselines.
+- Comparable-producer benchmarks do not expose identifiable producer information.
+- Workflow orchestration reduces manual operational work by **≥25%**.
+- Maintain **zero unauthorized consequential actions**.
+- Reach **30–50 paying operations**.
+- Reach **$20,000–$50,000 MRR**.
+- Demonstrate that proprietary outcome data materially improves recommendation accuracy, personalization, or profitability.
+- Establish repeatable producer onboarding, implementation, retention, and expansion processes.
+
+### Team and funding
+
+- Founder/CEO/Product Lead
+- Three core engineers
+- A fourth Product/Frontend or Platform Engineer added only after commercial validation
+- Customer success/implementation support
+- Fractional security, regulatory, agronomy, and mycology experts
+- **Budget: $1,050,000**
+- **Operating reserve across all horizons: $250,000**
+
+### Horizon 3 exit gate
+
+BluRok demonstrates a defensible data advantage, repeatable commercial growth, measurable customer outcomes, and evidence that each additional operation makes the product more valuable.
+
+---
+
+# Funding Summary
+
+| Horizon | Strategic Loop | Period | Engineering Team | Funding |
+|---|---|---:|---:|---:|
+| Horizon 1 | Recursive farm learning | 0–3 months | 2 engineers | $325,000 |
+| Horizon 2 | Cross-domain intelligence | 3–9 months | 3 engineers | $875,000 |
+| Horizon 3 | Network intelligence | 9–18 months | 3–4 engineers | $1,050,000 |
+| Operating reserve | Risk protection | Across 18 months | — | $250,000 |
+| **Total** | **Farm → Operation → Network** | **18 months** | **Up to 4 engineers** | **$2,500,000** |
+
+# Board Narrative
+
+**BluRok Vision will become the agricultural operating-intelligence system that learns which decisions produce the best biological, operational, quality, and financial outcomes for each farm—and then uses privacy-safe network intelligence to make every participating operation more effective.**
+
+# Key Metric
+
+## Verified Outcome Rate
+
+**The percentage of high-impact recommendations connected to a confirmed producer action and a measurable outcome.**
+
+| Stage | Target |
+|---|---:|
+| Horizon 1 | **≥60%** |
+| Horizon 2 | **≥70%** |
+| Horizon 3 | **≥80%** |
+
+### Supporting metric
+
+At least **80% of high-impact recommendations** must receive an accept, modify, reject, or escalate response.
+
+# Strategic Progression
+
+**Horizon 1:** Learn from every decision within one farm.  
+**Horizon 2:** Connect those decisions to operational and financial performance.  
+**Horizon 3:** Use privacy-safe outcomes across farms and markets to build an intelligence advantage competitors cannot easily reproduce.
 ## Board Pitch
 
 **Thesis (1 sentence):**
