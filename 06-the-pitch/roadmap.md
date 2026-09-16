@@ -1,36 +1,64 @@
 # Three-Horizon Roadmap & Board Pitch
 
-## Roadmap
+# Roadmap
 
-### Horizon 1 — Now (0-3 months)
-*Quick wins. Ship with existing capabilities.*
+### Horizon 1 — Now (0–3 months)
 
-| Initiative                                                                                          | Metric                                                                                                      | Confidence |
-| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | :--------: |
-| Close the recommendation-to-outcome loop: recommendation → response → action → outcome → correction | **≥80%** of high-impact recommendations receive a user response; **≥60%** receive a verified outcome        |      H     |
-| Launch confidence tiers, evidence display, approval controls, and human-review queue                | **100%** of material recommendations show confidence and evidence; **100%** of triggered cases enter review |      H     |
-| Add provider abstraction, deterministic-first routing, evaluations, and cost monitoring             | Frontier traffic **≤25%**; AI COGS **≤10% of revenue**; gross margin **≥75%**                               |      M     |
-| Establish the validated evaluation baseline                                                         | **92%** gold-set accuracy; hallucinations **<1%**; task-specific latency targets met                        |      M     |
+*Prove the foundation. Productionize the prototype, close the first funding tranche, and validate the product with real producers.*
 
+**Budget envelope:** $325,000  
+**Team:** Founder/CEO/Product Lead + 2 engineers + fractional specialists
 
-### Horizon 2 — Next (3-9 months)
-*Bets. Requires new capabilities or integrations.*
+| Initiative | Metric | Confidence |
+|---|---|:---:|
+| Secure the initial funding close and assemble the founding product team | Close **≥$1M toward the $2.5M round**; hire a Founding/Lead Engineer and Applied AI/Data Engineer | M |
+| Convert the Replit prototype into a secure, production-ready, multi-tenant platform | Production environment operational; farm data isolated by account; monitoring, backups, access controls, and audit logging implemented | M |
+| Close the recommendation-to-outcome loop: recommendation → response → action → outcome → correction | **≥80%** of high-impact recommendations receive a user response; **≥60%** receive a verified outcome | H |
+| Launch confidence tiers, evidence display, approval controls, and a human-review queue | **100%** of material recommendations show confidence and evidence; **100%** of triggered cases enter review | H |
+| Add provider abstraction, deterministic-first routing, evaluations, and cost monitoring | Frontier traffic **≤25%**; AI COGS **≤10% of revenue**; gross margin **≥75%** | M |
+| Establish a validated evaluation baseline | Gold-set accuracy **≥92%** for supported tasks; hallucination rate **<1%**; task-specific latency targets met | M |
+| Recruit the first producer design partners | **5–8 active pilot operations**; at least **3 use BluRok weekly** to support an operational decision | M |
 
-| Initiative                                                                                                             | Metric                                                                                                       | Confidence |
-| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | :--------: |
-| Build cross-domain profitability intelligence connecting environment, actions, yield, quality, labor, costs, and sales | **≥70%** of pilot production cycles contain a complete linked outcome record                                 |      M     |
-| Launch “What should I produce next?” with deterministic economics and evidence-grounded AI explanations                | Demonstrate measurable improvement in decision time and recommendation usefulness against the pilot baseline |      M     |
-| Integrate priority sensor, accounting, compliance, POS, and marketplace systems                                        | At least **3 priority integrations** live with **≥95% successful imports**                                   |      M     |
-| Test hybrid pricing: $39 base plus $1 per completed production decision                                                | Validate approximately **$49 ARPU**, willingness to pay, usage behavior, and **≥75% gross margin**           |      M     |
+---
 
-### Horizon 3 — Bet (9-18 months)
-*Moonshots. High uncertainty, high potential.*
+### Horizon 2 — Next (3–9 months)
 
-| Initiative                                                                                         | Metric                                                                                                    | Confidence |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | :--------: |
-| Launch privacy-safe network intelligence and comparable-producer benchmarks                        | Network recommendations outperform farm-only baselines without exposing identifiable producer information |      L     |
-| Connect producer outcomes with consumer preferences, purchases, repeat purchases, and sell-through | Demonstrate statistically reliable improvement in product recommendations and production planning         |      L     |
-| Expand from recommendations into approved workflow orchestration                                   | Reduce manual operational work while maintaining **zero unauthorized consequential actions**              |      L     |
+*Prove commercial value. Add integrations, profitability intelligence, a third engineer, and paying producer pilots.*
+
+**Budget envelope:** $875,000  
+**Team:** Founder/CEO/Product Lead + 3 engineers + pilot/customer-success support + fractional specialists
+
+| Initiative | Metric | Confidence |
+|---|---|:---:|
+| Expand the engineering team with a Backend/Integrations Engineer after Horizon 1 gates are met | Third engineer hired; Horizon 1 pilot, reliability, data-capture, and safety gates passed before headcount expansion | M |
+| Build cross-domain profitability intelligence connecting environment, actions, yield, quality, labor, costs, and sales | **≥70%** of pilot production cycles contain a complete linked outcome record | M |
+| Launch “What should I produce next?” with deterministic economics and evidence-grounded AI explanations | Reduce production-planning decision time by **≥30%**; **≥70%** of pilot users rate recommendations useful or highly useful | M |
+| Integrate priority sensor, accounting, compliance, POS, and marketplace systems | At least **3 priority integrations** live with **≥95% successful imports** | M |
+| Launch expert review for uncertain, regulated, or high-consequence recommendations | **100%** of defined high-risk cases routed for human review; median review turnaround **<24 hours** | M |
+| Validate commercial B2B pricing across producer segments | Test plans from **$199–$999/month** plus facility and integration pricing; achieve blended paying-customer ARPU of **≥$500/month** | M |
+| Convert pilots into paying operations | **10–20 active pilots**, at least **10 paying operations**, **≥70% 90-day retention**, and **≥$5,000 MRR** | M |
+| Demonstrate measurable producer value | At least **2 decision modules** show a measurable improvement in decision time, labor efficiency, cost, yield, quality, or profitability | M |
+
+---
+
+### Horizon 3 — Bet (9–18 months)
+
+*Scale what works. Build network intelligence, expand workflow automation, and establish repeatable commercial growth.*
+
+**Budget envelope:** $1,050,000  
+**Team:** Founder/CEO/Product Lead + 3–4 engineers + customer success/implementation support  
+**Operating reserve:** $250,000 across all three horizons
+
+| Initiative | Metric | Confidence |
+|---|---|:---:|
+| Add a fourth Product/Frontend or Platform Engineer only after commercial validation | Fourth engineer hired only after reaching **10 paying operations**, **≥70% retention**, reliable outcome capture, and no unresolved critical safety issues | M |
+| Launch privacy-safe network intelligence and comparable-producer benchmarks | Network recommendations outperform farm-only baselines without exposing identifiable producer information | L |
+| Create farm-specific predictive models using accumulated operational history | Farm-specific recommendations demonstrate measurable improvement over generic agricultural guidance | L |
+| Connect producer outcomes with consumer preferences, purchases, repeat purchases, and sell-through | Demonstrate statistically reliable improvement in product recommendations and production planning | L |
+| Expand from recommendations into human-approved workflow orchestration | Reduce manual operational work by **≥25%** while maintaining **zero unauthorized consequential actions** | L |
+| Establish repeatable commercial growth | Reach **30–50 paying operations**, **$20,000–$50,000 MRR**, and consistent producer onboarding and implementation processes | M |
+| Prove that BluRok’s proprietary data creates defensibility | Demonstrate that recommendation → action → outcome data materially improves accuracy, personalization, or profitability compared with a general-purpose AI baseline | M |
+| Prepare for the next institutional funding round | Document repeatable sales, retention, unit economics, outcome improvement, data advantage, and a credible expansion strategy | M |
 
 
 ## Board Pitch
